@@ -2,7 +2,7 @@ FROM ubuntu:yakkety
 MAINTAINER Akira Yumiyama "yumiyama.akira@gmail.com"
 
 RUN apt-get update && \
-    apt-get install apt-transport-https curl -y && \
+    apt-get install apt-transport-https curl unzip zip -y && \
     rm -rf /var/lib/apt/lsits/*
 
 ENV CLOUD_SDK_REPO cloud-sdk-yakkety
